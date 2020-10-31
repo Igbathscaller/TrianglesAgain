@@ -40,17 +40,19 @@ public class Triangle{
 
     //The format should be "v1(23.0, 4.0) v2(-2.3, 5.001) v3(5.0, 0.52)"
     public String toString(){
-        return "v1(" + v1.getX() +','+ v1.getY() + 
-             ") v2(" + v2.getX() +','+ v2.getY() + 
-             ") v3(" + v3.getX() +','+ v3.getY() + ')';
+        return "v1(" + v1.getX() +", "+ v1.getY() + 
+             ") v2(" + v2.getX() +", "+ v2.getY() + 
+             ") v3(" + v3.getX() +", "+ v3.getY() + ')';
     }
 
     //replace the specified Point (0,1, or 2) with the new Point
     public void setVertex(int index, Point newP){
-        switch (index){
-            case 1: v1 = newP;
-            case 2: v2 = newP;
-            case 3: v3 = newP;
+        if (index == 0){
+            v1 = newP;
+        }else if (index == 1){
+            v2 = newP;
+        }else if (index == 2){
+            v3 = newP;
         }
     }
     

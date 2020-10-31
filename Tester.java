@@ -43,11 +43,11 @@ public class Tester{
 		System.out.println(alvin.getArea());
 		System.out.println(seven.getArea());
 		System.out.println(giver.getArea());
-		david.setVertex(1, c);
+		david.setVertex(0, c);
 		System.out.println(david);
-		david.setVertex(2, a);
+		david.setVertex(1, a);
 		System.out.println(david);
-		david.setVertex(3, b);
+		david.setVertex(2, b);
 		System.out.println(david);
 		System.out.println(david.getArea());
 	}
