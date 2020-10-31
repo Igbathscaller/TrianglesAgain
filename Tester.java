@@ -22,9 +22,9 @@ public class Tester{
 		System.out.println(david.toString());
 		System.out.println(devin.toString());
 		System.out.println(kevin.toString());
-		System.out.println(alvin.toString());
-		System.out.println(seven.toString());
-		System.out.println(giver.toString());
+		System.out.println(alvin);
+		System.out.println(seven);
+		System.out.println(giver);
 		System.out.println(david.classify());
 		System.out.println(devin.classify());
 		System.out.println(kevin.classify());
@@ -43,6 +43,13 @@ public class Tester{
 		System.out.println(alvin.getArea());
 		System.out.println(seven.getArea());
 		System.out.println(giver.getArea());
+		david.setVertex(1, c);
+		System.out.println(david);
+		david.setVertex(2, a);
+		System.out.println(david);
+		david.setVertex(3, b);
+		System.out.println(david);
+		System.out.println(david.getArea());
 	}
 	/*
 	Distance test cases:

@@ -23,7 +23,7 @@ public class Triangle{
     //Return the area using Heron's formula without any rounding.
     public double getArea(){
         double S = getPerimeter() / 2;
-        return S*(S-v1.distanceTo(v2))*(S-v2.distanceTo(v3))*(S-v3.distanceTo(v1));
+        return Math.sqrt(S*(S-v1.distanceTo(v2))*(S-v2.distanceTo(v3))*(S-v3.distanceTo(v1)));
     }
 
     //Return the "equilateral" "isosceles" or "scalene" Round distances to the nearest tenthousandths for your classifications.
@@ -45,5 +45,13 @@ public class Triangle{
              ") v3(" + v3.getX() +','+ v3.getY() + ')';
     }
 
-
+    //replace the specified Point (0,1, or 2) with the new Point
+    public void setVertex(int index, Point newP){
+        switch (index){
+            case 1: v1 = newP;
+            case 2: v2 = newP;
+            case 3: v3 = newP;
+        }
+    }
+    
 }
