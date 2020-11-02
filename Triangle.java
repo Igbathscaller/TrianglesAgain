@@ -28,9 +28,9 @@ public class Triangle{
 
     //Return the "equilateral" "isosceles" or "scalene" Round distances to the nearest tenthousandths for your classifications.
     public String classify(){
-        double a = v1.distanceTo(v2);
-        double b = v2.distanceTo(v3);
-        double c = v3.distanceTo(v1);
+        double a = Math.round(v1.distanceTo(v2)*10000);
+        double b = Math.round(v2.distanceTo(v3)*10000);
+        double c = Math.round(v3.distanceTo(v1)*10000);
         if (a==b && b==c && c==a)
         return "equilateral";
         if (a==b || b==c || c==a)
