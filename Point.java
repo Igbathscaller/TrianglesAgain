@@ -1,5 +1,5 @@
 public class Point{
-    
+
     private double x,y;
 
     //construct a point give coords
@@ -17,18 +17,18 @@ public class Point{
     public double getX(){
         return x;
     }
-    
+
     public double getY(){
         return y;
-    }  
-    
+    }
+
     public double distanceTo(Point other){
         return Math.sqrt((x-other.getX())*(x-other.getX())+(y-other.getY())*(y-other.getY()));
     }
 
     public boolean equals(Point other) {
-        return other.getX()==x && other.getY()==y;
+        return other != null && other.getX()==x && other.getY()==y;
     }
 
-    
+
 }
